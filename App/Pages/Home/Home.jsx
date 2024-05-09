@@ -46,7 +46,7 @@ const Home = () => {
 					<ScrollView horizontal showsHorizontalScrollIndicator={false}>
 							{videoCourseData.map((courseImg,index)=>{
 								return (
-									<TouchableOpacity key={index}onPress={()=> navigation.navigate('Courses') }>
+									<TouchableOpacity onPress={()=> navigation.navigate('Courses') } key={index} >
 										<View style={{paddingRight:10 }}>
 											<Image  source={courseImg.img}/>
 										</View>
@@ -63,8 +63,8 @@ const Home = () => {
 					<ScrollView horizontal showsHorizontalScrollIndicator={false} >
 					{basicProperCourse.map((courses,index)=>{
 						return (
-							<TouchableOpacity key={index} onPress={()=> navigation.navigate('Courses') }>
-								<Card style={{height:200 , width:200 , marginRight:20 }}>
+							<TouchableOpacity  onPress={()=> navigation.navigate('Courses') } key={index}>
+								<Card  style={{height:200 , width:200 , marginRight:20 }}>
 									<View  style={{paddingRight:10 }}>
 										<Image source={courses.img} style={{width:"100%",height:"70%"}} />
 										<Card.Content >
@@ -86,9 +86,9 @@ const Home = () => {
 					<ScrollView horizontal showsHorizontalScrollIndicator={false}>
 					{advanceCourses.map((courses,index)=>{
 						return (
-							<TouchableOpacity>
+							<TouchableOpacity key={index}>
 								<Card style={{height:200 , width:200 , marginRight:20 }} elevation={5}>
-									<View key={index} style={{paddingRight:10 }}>
+									<View  style={{paddingRight:10 }}>
 										<Image source={courses.img} style={{height:"70%",width:"100%"}} />
 										<Card.Content >
 											<Text style={{fontSize:20, fontWeight:"500",marginTop:10 , textAlign : "left"}}>{courses.courseTitle}</Text>
