@@ -1,7 +1,7 @@
 import PythonImg from "../Assests/python.png";
 import ReactImg from "../Assests/react.png";
 
-const basicProperCourse = [
+const popularCourses = [
     {
         img: PythonImg,
         courseTitle : "Basic Python",
@@ -15,4 +15,4 @@ const basicProperCourse = [
     }
 ]
 
-export default basicProperCourse
+export default popularCourses

@@ -2,7 +2,6 @@ import Home from './App/Pages/Home/Home';
 import Login from './App/Pages/Login/Login';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Courses from './App/Pages/Courses/Courses';
 import { PaperProvider } from 'react-native-paper';
 
